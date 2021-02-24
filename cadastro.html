@@ -6,8 +6,9 @@
 <body>
 
 
-<h1> Formulário</h1>
-<form>
+<h1> Cadastro</h1>
+
+<form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post">
 	
 
 Login:<br/>
@@ -21,24 +22,41 @@ Confirme a Senha:<br/>
 <input type="password" name="confirme a senha"><br/>
 <br/>
 
-Nome:<br/>
+Nome:<br/>s
 <input type="text" name="nome"><br/>
 
 Sexo:<br/>
-<input type="radio" name="sexo">masculino<br/>
-<input type="radio" name="sexo">feminino<br/>
+<input type="radio"value = "masculino" name="sexo">masculino<br/>
+<input type="radio" value = "feminino"name="sexo">feminino<br/>
 
 Email:<br/>
-<input type="email" name="Email"><br/>
+<input type="email" name="email"><br/>
 
 Interesses:<br/>
-<input type="checkbox" name="Interesses">Futebol<br/>
-<input type="checkbox" name="Interesses">Politica<br/>
-<input type="checkbox" name="Interesses">Turismo<br/>
-<input type="checkbox" name="Interesses">Pesca<br/>
+<input type="checkbox"value = "Futebol"  name="interesses">Futebol<br/>
+<input type="checkbox" value = "Politica" name="interesses">Politica<br/>
+<input type="checkbox" value = "Turismo" name="interesses">Turismo<br/>
+<input type="checkbox" value = "Pesca" name="interesses">Pesca<br/>
 <br/>
 
-<input type="button" value ="Enviar">
+Estado:<br/>
+<select name="estado">
+	<option value="select">informe o seu estado</option>
+	<option value="PI">PI</option>
+	<option value="CE">CE</option>
+	<option value="MA">MA</option>
+	<option value="PB">PB</option>
+	
+</select><br/>
+<br/>
+
+observações:<br/>
+<textarea name="observacao"> digite aqui</textarea><br/>
+
+
+<br/>
+
+<input type="submit" value ="Enviar">
 
 
 </form>
