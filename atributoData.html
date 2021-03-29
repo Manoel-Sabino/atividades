@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title> Data</title>
+	<meta charset="utf-8"/>
+
+   <script type="text/javascript">
+	   function mostravalor(componente){
+			var valor = componente.getAttribute('data-idade');
+			alert(valor);
+			var valor = componente.getAttribute('cpf');
+			alert(valor);
+		}
+   </script>
+<style type="text/css">
+	.pessoa{
+		color: red;
+	}
+	.pessoa[data-idade = "30 anos"]{
+		color :blue;
+
+	}
+	 .pessoa::before{
+		content: 'nome:';
+	}
+	 .pessoa::after{
+	 	content:  '-idade:'attr(data-idade)"- C.P.F:" attr(cpf);
+	 }
+
+</style>
+
+
+
+   </head>
+     <body>
+	  
+	    <ul>
+		  <li class="pessoa" onclick="mostravalor(this)"data-idade="20 anos", cpf="111.111.111.11" >joão</li>
+		  <li class="pessoa" onclick="mostravalor(this)"data-idade="30 anos", cpf="222.222.222.22">josé</li>
+		  <li class="pessoa" onclick="mostravalor(this)"data-idade="40 anos", cpf=333.333.333.33>maria</li>
+
+		
+	    </ul>
+	 
+    </body>
+
+</html>
+
+    
