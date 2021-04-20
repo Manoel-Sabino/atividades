@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transição</title>
+
+	<style type="text/css">
+		
+      .box{
+      	position: relative;
+      	left: 10px;
+      	top: 10px;
+      	width:50px;
+      	height: 50px;
+      	background: red;
+      	animation-name: minhaAnimação;
+      	animation-duration: 5s;
+      	animation-iteration-count: 10s;
+      	animation-direction:infinite;
+      	
+
+      }
+      .box:hover{
+      	border: solid 15px black;
+      	transition: border 5s 3s;
+     }
+      
+      @keyframes minhaAnimação {
+
+      	animation-diretion:normal;
+        
+        
+      	0%{
+      		left: 10px
+      	
+      	}
+      	25%{
+      		background: blue;
+      		transform: rotate(90grad);
+      		
+
+      	}
+      	50%{
+      		background: yellow;
+      		transform: rotate(90grad);
+      		
+      	}
+      	75%{
+      		background: black;
+      		transform: rotate(90grad);
+      		
+      	}
+      	100%{
+      		background: gray;
+      		transform: rotate(90grad);
+      		
+      	}
+  
+      }
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		
+	</div>
+
+</body>
+</html>
